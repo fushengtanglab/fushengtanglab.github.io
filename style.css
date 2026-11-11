@@ -274,6 +274,85 @@ th {
   font-size: 0.9rem;
 }
 
+/* Draft content */
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.placeholder {
+  padding: 1px 4px;
+  border-radius: 3px;
+  background: #fff3b0;
+  color: #5c4a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  .placeholder {
+    background: #4a3f12;
+    color: #ffe58a;
+  }
+}
+
+.callout {
+  margin-top: 20px;
+  padding: 20px;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--accent-soft);
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.figure-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  margin-top: 24px;
+  padding: 20px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.bullets li {
+  margin-bottom: 8px;
+}
+
+.pubs {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.pubs li {
+  padding: 10px 0 10px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pubs li:last-child {
+  border-bottom: none;
+}
+
+.person p:not(.role) {
+  text-align: left;
+}
+
+.person .links {
+  font-size: 0.9rem;
+}
+
 /* Footer */
 
 footer {

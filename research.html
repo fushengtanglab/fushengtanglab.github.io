@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research · Fusheng Tang Lab</title>
-  <meta name="description" content="Research areas, current projects, and publications from the Fusheng Tang Lab.">
+  <title>Research · Tang Lab</title>
+  <meta name="description" content="Research in the Tang Lab: the molecular biology of aging, lipid transport, and membrane trafficking in yeast.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="site-name" href="index.html">Fusheng Tang Lab</a>
+      <a class="site-name" href="index.html">Tang Lab</a>
       <nav>
         <a href="index.html">Home</a>
         <a href="research.html" aria-current="page">Research</a>
         <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="microscopy.html">Microscopy</a>
         <a href="funding.html">Funding</a>
       </nav>
     </div>
@@ -23,64 +25,47 @@
   <main class="container">
     <div class="page-intro">
       <h1>Research</h1>
-      <p>[A short overview of the lab's research program and its main goals.]</p>
+      <p>We combine yeast genetics, cell biology, and systems biology to understand how membrane traffic shapes aging.</p>
     </div>
 
     <section>
-      <h2>Research areas</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>[Research area 1]</h3>
-          <p>[Two or three sentences describing this area of work.]</p>
-        </article>
-        <article class="card">
-          <h3>[Research area 2]</h3>
-          <p>[Two or three sentences describing this area of work.]</p>
-        </article>
-        <article class="card">
-          <h3>[Research area 3]</h3>
-          <p>[Two or three sentences describing this area of work.]</p>
-        </article>
+      <span class="tag">Aging</span>
+      <h2>Molecular biology of aging</h2>
+      <p>Yeast cells age in ways that resemble human cells, making them a powerful model for identifying genes and pathways that control lifespan. Our work has linked lifespan extension to vacuole fusion and a form of autophagy (Tang et al., 2008) and used systems biology to identify longevity genes (Tan et al., 2009).</p>
+    </section>
+
+    <section>
+      <span class="tag">Lipid transport &amp; membrane trafficking</span>
+      <h2>Osh6 and traffic to the vacuole</h2>
+      <p>Our earlier work showed that overexpressing the lipid-transfer protein Osh6 extends yeast lifespan by increasing vacuole fusion (Gebre et al., 2012) and boosts an anti-aging membrane trafficking pathway toward vacuoles (Kadhim et al., 2022). We now study which membrane-trafficking pathway carries Osh6's effect, as Osh6 transports the lipids PI4P and phosphatidylserine from the trans-Golgi network (TGN) to the vacuole.</p>
+
+      <div class="callout">
+        <h3>Current direction</h3>
+        <p>We combine Osh6 up-regulation with mutants that block different steps of traffic between the TGN, endosomes, and the vacuole, including <em>gga2</em>, <em>ent3</em>, <em>vps9</em>, <em>gtr1</em>, <em>ypt7</em>, and the retromer subunit <em>vps35</em>. Following the sorting of the vacuolar enzyme CPY, the secretory SNARE Snc1, and the plasma membrane ATPase Pma1, our results suggest that up-regulated Osh6 enhances traffic from the TGN to late endosomes, with different outcomes in the mother cell and its bud.</p>
+        <p>Because late endosomes and lysosomes decline with age, and endosome-derived secretion is involved in age-related diseases such as Parkinson's disease, our work may point to ways of keeping these organelles healthy during aging.</p>
+      </div>
+
+      <div class="figure-placeholder">
+        <span class="placeholder">Figure placeholder: a western blot or GFP-Snc1 image, with a one-line caption (or any figure you prefer)</span>
       </div>
     </section>
 
     <section>
-      <h2>Current projects</h2>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">Ongoing</span>
-          <h3>[Project title]</h3>
-          <p>[What the project investigates, the methods used, and what has been found so far.]</p>
-          <p class="muted">[Team members involved]</p>
-        </article>
-        <article class="card">
-          <span class="tag">Ongoing</span>
-          <h3>[Project title]</h3>
-          <p>[What the project investigates, the methods used, and what has been found so far.]</p>
-          <p class="muted">[Team members involved]</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Selected publications</h2>
-      <ul class="list">
-        <li>
-          [Author A, Author B, Author C.] <strong>[Paper title.]</strong> <em>[Journal name]</em> ([Year]).
-          <a href="#">[Link to paper]</a>
-        </li>
-        <li>
-          [Author A, Author B.] <strong>[Paper title.]</strong> <em>[Journal name]</em> ([Year]).
-          <a href="#">[Link to paper]</a>
-        </li>
+      <h2>How we work</h2>
+      <ul class="bullets">
+        <li><strong>Yeast genetics:</strong> gene deletions, chromosomal promoter replacement (e.g., <em>P<sub>ERG6</sub>-OSH6</em>) and combined mutant strains, confirmed by PCR.</li>
+        <li><strong>Live-cell fluorescence microscopy:</strong> GFP-tagged proteins such as Snc1 and Pma1, FM4-64 to follow endocytosis and vacuoles, and actin staining.</li>
+        <li><strong>Protein sorting and secretion assays:</strong> following the vacuolar enzyme carboxypeptidase Y (CPY) inside cells and in the growth medium.</li>
+        <li><strong>Growth and stress assays:</strong> spot assays and calcofluor white sensitivity.</li>
+        <li><strong>Aging and systems biology (earlier work):</strong> lifespan measurements and computational approaches to find longevity genes and model cellular processes.</li>
       </ul>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>Fusheng Tang Lab &middot; [Institution name]</p>
-      <p>&copy; 2026 Fusheng Tang Lab</p>
+      <p>Tang Lab · Department of Biology · University of Arkansas at Little Rock</p>
+      <p>&copy; 2026 Tang Lab</p>
     </div>
   </footer>
 </body>
