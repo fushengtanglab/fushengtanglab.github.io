@@ -3,38 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
-  <meta name="description" content="Welcome to my website.">
+  <title>Fusheng Tang Lab</title>
+  <meta name="description" content="The Fusheng Tang Lab: our research, our team, and our funding.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="site-name" href="#top">My Website</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <a class="site-name" href="index.html">Fusheng Tang Lab</a>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="funding.html">Funding</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <h1>Welcome to my website</h1>
-      <p>This site is just getting started. More is on the way soon.</p>
+  <main class="container">
+    <div class="page-intro">
+      <h1>Fusheng Tang Lab</h1>
+      <p>[One or two sentences describing what the lab studies and why it matters.]</p>
+      <a class="button" href="research.html">Explore our research</a>
+    </div>
+
+    <section>
+      <h2>About the lab</h2>
+      <p>[A short paragraph about the lab: the department and institution it belongs to, the main questions it investigates, and the approaches it uses.]</p>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>This is where you can tell visitors who you are and what this site is for.</p>
+    <section>
+      <h2>Lab news</h2>
+      <ul class="list">
+        <li>
+          <span class="date">[Month Year]</span>
+          [News item, e.g. a new paper, award, grant, or new lab member.]
+        </li>
+        <li>
+          <span class="date">[Month Year]</span>
+          [News item.]
+        </li>
+      </ul>
     </section>
 
-    <section id="contact">
+    <section>
       <h2>Contact</h2>
-      <p>Add the best way for people to reach you here.</p>
+      <p>[Department name]<br>[Institution name]<br>[Street address, City, Country]</p>
+      <p>Email: <a href="mailto:name@example.edu">name@example.edu</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 My Website</p>
+    <div class="container">
+      <p>Fusheng Tang Lab &middot; [Institution name]</p>
+      <p>&copy; 2026 Fusheng Tang Lab</p>
+    </div>
   </footer>
 </body>
 </html>
