@@ -6,14 +6,17 @@
   <title>Microscopy Services · Tang Lab</title>
   <meta name="description" content="The campus fluorescence microscope managed by the Tang Lab, available to UA Little Rock faculty, staff, and students.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
-      <a class="site-name" href="index.html">Tang Lab</a>
-      <nav>
+      <a class="site-name" href="index.html">Tang Lab<span>Biology · UA Little Rock</span></a>
+      <nav aria-label="Main">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="people.html">People</a>
@@ -25,40 +28,81 @@
   </header>
 
   <main id="main" class="container">
+
     <div class="page-intro">
+      <p class="eyebrow">Services</p>
       <h1>Microscopy services</h1>
       <p>In addition to our own research, our lab manages the campus fluorescence microscope, which is available to UA Little Rock faculty, staff, and students.</p>
+      <div class="button-row">
+        <a class="button" href="mailto:fxtang@ualr.edu">Ask about using the microscope</a>
+      </div>
     </div>
 
     <section>
-      <h2>Fluorescence microscope</h2>
-      <p>A Nikon widefield fluorescence microscope with a Plan Apo 100× oil-immersion objective (NA 1.4) and a Nikon DS-Qi2 high-sensitivity monochrome camera. It can take:</p>
-      <ul class="bullets">
-        <li>Brightfield and DIC images that show the outline and shape of cells, buds, and vacuoles.</li>
-        <li>Fluorescence images of green (e.g., GFP), red (e.g., mCherry, FM4-64), and blue/UV (e.g., DAPI, calcofluor white) labels.</li>
-        <li>Merged images that overlay fluorescence on DIC to show where a protein sits in the cell.</li>
-        <li>High-magnification images of live or fixed cells, such as yeast, bacteria, and cultured cells, detailed enough to see organelles such as vacuoles and endosomes.</li>
-      </ul>
+      <div class="grid-2">
+        <div>
+          <h2>Fluorescence microscope</h2>
+          <p>A Nikon widefield fluorescence microscope with a Plan Apo 100× oil-immersion objective (NA 1.4) and a Nikon DS-Qi2 high-sensitivity monochrome camera. It can take:</p>
+          <ul class="bullets">
+            <li>Brightfield and DIC images that show the outline and shape of cells, buds, and vacuoles.</li>
+            <li>Fluorescence images of green (e.g., GFP), red (e.g., mCherry, FM4-64), and blue/UV (e.g., DAPI, calcofluor white) labels.</li>
+            <li>Merged images that overlay fluorescence on DIC to show where a protein sits in the cell.</li>
+            <li>High-magnification images of live or fixed cells, such as yeast, bacteria, and cultured cells, detailed enough to see organelles such as vacuoles and endosomes.</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>At a glance</h3>
+          <dl class="spec-list">
+            <div><dt>Microscope</dt><dd>Nikon widefield fluorescence</dd></div>
+            <div><dt>Objective</dt><dd>Plan Apo 100× oil immersion, NA 1.4</dd></div>
+            <div><dt>Camera</dt><dd>Nikon DS-Qi2 monochrome</dd></div>
+            <div><dt>Imaging modes</dt><dd>Brightfield, DIC, fluorescence (green, red, blue/UV)</dd></div>
+            <div><dt>Software</dt><dd>Nikon NIS-Elements, Fiji/ImageJ</dd></div>
+            <div><dt>Available to</dt><dd>UA Little Rock faculty, staff, and students</dd></div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
     <section>
       <h2>Image analyses</h2>
-      <p>Images are captured with Nikon NIS-Elements and saved with their scale and camera settings. With NIS-Elements and the free software Fiji/ImageJ, we can:</p>
-      <ul class="bullets">
-        <li><strong>Build figures:</strong> merge channels, add scale bars, and assemble multi-panel figures.</li>
-        <li><strong>Measure fluorescence:</strong> brightness of whole cells or selected regions, for example, plasma membrane versus cell interior, or bud versus mother cell.</li>
-        <li><strong>Score and count:</strong> the proportion of cells with a given protein location or organelle shape, such as fragmented vacuoles.</li>
-        <li><strong>Measure size:</strong> the area and length of cells and organelles.</li>
-        <li><strong>Compare two colors:</strong> intensity profiles along a line and colocalization of two labeled proteins.</li>
+      <p class="section-lead">Images are captured with Nikon NIS-Elements and saved with their scale and camera settings. With NIS-Elements and the free software Fiji/ImageJ, we can:</p>
+      <ul class="technique-grid">
+        <li><strong>Build figures</strong>Merge channels, add scale bars, and assemble multi-panel figures.</li>
+        <li><strong>Measure fluorescence</strong>Brightness of whole cells or selected regions, for example, plasma membrane versus cell interior, or bud versus mother cell.</li>
+        <li><strong>Score and count</strong>The proportion of cells with a given protein location or organelle shape, such as fragmented vacuoles.</li>
+        <li><strong>Measure size</strong>The area and length of cells and organelles.</li>
+        <li><strong>Compare two colors</strong>Intensity profiles along a line and colocalization of two labeled proteins.</li>
       </ul>
-      <p>To use the microscope, <a href="mailto:fxtang@ualr.edu">contact Dr. Tang</a>.</p>
+    </section>
+
+    <section>
+      <div class="callout">
+        <h2>Using the microscope</h2>
+        <p>To use the microscope, <a href="mailto:fxtang@ualr.edu">contact Dr. Tang</a>.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>Tang Lab · Department of Biology · University of Arkansas at Little Rock</p>
-      <p>&copy; 2026 Tang Lab</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Tang Lab</p>
+        <p>Department of Biology<br>University of Arkansas at Little Rock</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Visit</h2>
+        <p>2801 S. University Ave.<br>Little Rock, AR 72204<br>Room SCLB 382</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <p><a href="mailto:fxtang@ualr.edu">fxtang@ualr.edu</a></p>
+        <p><a href="https://ualr.edu/biology/">Department of Biology</a></p>
+        <p><a href="https://ualr.edu/">UA Little Rock</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Tang Lab · University of Arkansas at Little Rock</p>
     </div>
   </footer>
 </body>

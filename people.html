@@ -6,14 +6,17 @@
   <title>People · Tang Lab</title>
   <meta name="description" content="The researchers and students of the Tang Lab at UA Little Rock.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
-      <a class="site-name" href="index.html">Tang Lab</a>
-      <nav>
+      <a class="site-name" href="index.html">Tang Lab<span>Biology · UA Little Rock</span></a>
+      <nav aria-label="Main">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="people.html" aria-current="page">People</a>
@@ -25,8 +28,10 @@
   </header>
 
   <main id="main" class="container">
+
     <div class="page-intro">
-      <h1>People</h1>
+      <p class="eyebrow">People</p>
+      <h1>Meet the lab</h1>
       <p>The researchers and students who make up the lab.</p>
     </div>
 
@@ -38,9 +43,9 @@
 
     <section>
       <h2>Principal investigator</h2>
-      <article class="card person pi">
+      <article class="person-row pi">
         <img class="photo" src="images/fusheng-tang.jpg" alt="Fusheng Tang">
-        <div class="pi-details">
+        <div class="person-details">
           <h3>Fusheng Tang, Ph.D.</h3>
           <p class="role">Principal Investigator · Associate Professor, UA Little Rock, Biology Department</p>
           <p>Research interests: molecular biology of aging, intracellular sterol transport and cellular systems biology. Dr. Tang uses yeast as a model to study aging and the membrane-trafficking pathways that affect lifespan.</p>
@@ -52,46 +57,63 @@
 
     <section>
       <h2>Graduate students</h2>
-      <div class="grid">
-        <article class="card person">
-          <img class="photo" src="images/omotolani-jimoh.png" alt="Omotolani Jimoh">
+      <article class="person-row">
+        <img class="photo" src="images/omotolani-jimoh.png" alt="Omotolani Jimoh">
+        <div class="person-details">
           <h3>Omotolani Jimoh</h3>
           <p class="role">PhD Candidate in Biology</p>
           <p>Omotolani works on our first ongoing project, identifying lipids that remedy vacuolar membranes. She studies how up-regulation of Osh6 changes traffic from the trans-Golgi network to late endosomes and the vacuole, including in mutants of the retromer subunit Vps35, whose human counterpart is linked to Parkinson's disease. She built the strain collection that combines Osh6 overexpression with trafficking mutants, established the lab's CPY secretion western blot assay, and quantifies GFP-Snc1 trafficking by microscopy. She also mentors undergraduates in the molecular biology laboratory course.</p>
           <p class="links"><a href="https://scholar.google.co.uk/citations?user=Ctw48jsAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0009-0009-3537-0769">ORCID</a> · <a href="https://www.linkedin.com/in/omotolanijimoh">LinkedIn</a></p>
-        </article>
-        <article class="card person">
-          <div class="photo" aria-hidden="true">ZT</div>
+        </div>
+      </article>
+      <article class="person-row">
+        <div class="photo" aria-hidden="true">ZT</div>
+        <div class="person-details">
           <h3>Zakariya Tayyab</h3>
           <p class="role">PhD Candidate in Biology</p>
           <p>Zakariya works on our second ongoing project, identifying lipids that allocate TORC1. He studies how blocking traffic from the trans-Golgi network to late endosomes affects autophagy and cell size in our Osh6 longevity mutant.</p>
-        </article>
-      </div>
+        </div>
+      </article>
     </section>
 
     <section>
       <h2>Former lab members</h2>
-      <div class="grid">
-        <article class="card">
+      <ul class="alumni">
+        <li>
           <h3>William King, Ph.D.</h3>
           <p>Studied how up-regulated Osh6 enhances traffic from the trans-Golgi network to late endosomes and vacuoles, and how this differs between the mother cell and its bud (King et al., in preparation). He also studied the route of DNA uptake during yeast transformation.</p>
-        </article>
-        <article class="card">
+        </li>
+        <li>
           <h3>Ilham Kadhim, Ph.D.</h3>
           <p>Showed that up-regulation of Osh6 boosts an anti-aging membrane trafficking pathway toward vacuoles: it accumulates PI4P on the trans-Golgi network, and several of its effects depend on the adaptor protein Gga2 (<a href="publications.html#kadhim-2022">Kadhim et al., 2022</a>).</p>
-        </article>
-        <article class="card">
+        </li>
+        <li>
           <h3>Nazneen Begum, Ph.D.</h3>
           <p>Studied how up-regulation of Osh6 mimics calorie restriction (CR) for longevity and stimulates a unique form of endocytosis (Begum et al., in preparation).</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>Tang Lab · Department of Biology · University of Arkansas at Little Rock</p>
-      <p>&copy; 2026 Tang Lab</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Tang Lab</p>
+        <p>Department of Biology<br>University of Arkansas at Little Rock</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Visit</h2>
+        <p>2801 S. University Ave.<br>Little Rock, AR 72204<br>Room SCLB 382</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <p><a href="mailto:fxtang@ualr.edu">fxtang@ualr.edu</a></p>
+        <p><a href="https://ualr.edu/biology/">Department of Biology</a></p>
+        <p><a href="https://ualr.edu/">UA Little Rock</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Tang Lab · University of Arkansas at Little Rock</p>
     </div>
   </footer>
 </body>
