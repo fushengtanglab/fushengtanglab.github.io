@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>People · Tang Lab</title>
   <meta name="description" content="The researchers and students of the Tang Lab at UA Little Rock.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <a class="site-name" href="index.html">Tang Lab</a>
@@ -22,7 +24,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main id="main" class="container">
     <div class="page-intro">
       <h1>People</h1>
       <p>The researchers and students who make up the lab.</p>
@@ -30,14 +32,14 @@
 
     <!--
       To add a photo, put the image in an "images" folder and replace
-      <div class="photo">FT</div> with:
+      <div class="photo" aria-hidden="true">FT</div> with:
       <img class="photo" src="images/photo-name.jpg" alt="Person's name">
     -->
 
     <section>
       <h2>Principal investigator</h2>
       <article class="card person pi">
-        <div class="photo">FT</div>
+        <div class="photo" aria-hidden="true">FT</div>
         <div class="pi-details">
           <h3>Fusheng Tang, Ph.D.</h3>
           <p class="role">Principal Investigator · Associate Professor, Department of Biology, UA Little Rock</p>
@@ -51,14 +53,14 @@
       <h2>Graduate students</h2>
       <div class="grid">
         <article class="card person">
-          <div class="photo">OJ</div>
+          <div class="photo" aria-hidden="true">OJ</div>
           <h3>Omotolani Jimoh</h3>
           <p class="role">PhD Candidate in Biology</p>
           <p>Omotolani studies how Osh6 changes traffic between the trans-Golgi network, late endosomes, and the vacuole, including in mutants of the retromer subunit Vps35, whose human counterpart is linked to Parkinson's disease. She built the strain collection that combines Osh6 overexpression with trafficking mutants, established the lab's CPY secretion western blot assay, and quantifies GFP-Snc1 trafficking by microscopy. She also mentors undergraduates in the molecular biology laboratory course.</p>
           <p class="links">Google Scholar · <span class="placeholder">ORCID, LinkedIn, photo; Dr. Tang to confirm wording</span></p>
         </article>
         <article class="card person">
-          <div class="photo">ZT</div>
+          <div class="photo" aria-hidden="true">ZT</div>
           <h3>Zakariya Tayyab</h3>
           <p class="role">PhD Candidate in Biology</p>
           <p>Zakariya studies how Osh6 upregulation affects membrane biogenesis.</p>

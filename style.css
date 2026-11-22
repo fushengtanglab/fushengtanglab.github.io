@@ -46,6 +46,22 @@ img {
   padding: 0 20px;
 }
 
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--background);
+  font-weight: 600;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
 /* Header and navigation */
 
 .site-header {
@@ -164,6 +180,10 @@ p {
   background: var(--surface);
 }
 
+.card + p {
+  margin-top: 16px;
+}
+
 .card p:last-child {
   margin-bottom: 0;
 }
@@ -223,55 +243,6 @@ p {
   flex: 1;
   min-width: 240px;
   text-align: left;
-}
-
-/* Lists (news, publications) */
-
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.list li {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.list li:last-child {
-  border-bottom: none;
-}
-
-.date {
-  display: block;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-/* Funding table */
-
-.table-wrap {
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  min-width: 560px;
-  border-collapse: collapse;
-  background: var(--surface);
-}
-
-th,
-td {
-  padding: 12px 14px;
-  border-bottom: 1px solid var(--border);
-  text-align: left;
-  vertical-align: top;
-}
-
-th {
-  background: var(--accent-soft);
-  font-size: 0.9rem;
 }
 
 /* Draft content */
