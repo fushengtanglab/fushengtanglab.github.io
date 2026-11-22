@@ -180,10 +180,6 @@ p {
   background: var(--surface);
 }
 
-.card + p {
-  margin-top: 16px;
-}
-
 .card p:last-child {
   margin-bottom: 0;
 }
@@ -213,11 +209,12 @@ p {
   height: 112px;
   margin: 0 auto 14px;
   border-radius: 50%;
-  object-fit: cover;
   background: var(--accent-soft);
   color: var(--accent);
   font-size: 2rem;
   font-weight: 700;
+  object-fit: cover;
+  object-position: top;
 }
 
 .person .role {
@@ -280,19 +277,6 @@ p {
   margin-bottom: 0;
 }
 
-.figure-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 220px;
-  margin-top: 24px;
-  padding: 20px;
-  border: 2px dashed var(--border);
-  border-radius: 8px;
-  color: var(--muted);
-  text-align: center;
-}
-
 .bullets {
   margin: 0;
   padding-left: 20px;
@@ -322,6 +306,52 @@ p {
 
 .person .links {
   font-size: 0.9rem;
+}
+
+/* Funding */
+
+.grants {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grants li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.grants li:last-child {
+  border-bottom: none;
+}
+
+.grant-year {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Figures */
+
+.figure {
+  margin: 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 /* Footer */
